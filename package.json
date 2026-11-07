@@ -1,0 +1,36 @@
+{
+  "name": "pstack-pi",
+  "version": "0.15.36",
+  "description": "pstack skills for the Pi coding agent. Unofficial port of the Cursor pstack plugin (MIT).",
+  "license": "MIT",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pstack",
+    "skills"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NagasakaH/pstack-pi.git"
+  },
+  "homepage": "https://github.com/cursor/plugins/tree/main/pstack",
+  "files": [
+    "skills",
+    "agents",
+    "automations",
+    "docs",
+    "README.md",
+    "PORTING.md",
+    "UPSTREAM.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "skills": [
+      "./skills"
+    ]
+  },
+  "scripts": {
+    "sync-upstream": "./scripts/sync-upstream.sh",
+    "test": "node scripts/test-package.mjs"
+  }
+}
